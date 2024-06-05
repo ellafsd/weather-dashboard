@@ -1,0 +1,134 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 10;
+    padding: 10px;
+    background-color: #104e90;
+    color: rgb(27, 15, 15);
+    border-radius: 5px;
+}
+
+#sidebar {
+    flex: 1;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+#search-history-section h2 {
+    margin-top: 0;
+}
+
+#search-history {
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1;
+}
+
+#search-history li {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-history li:hover {
+    background-color: #f1f1f1;
+}
+
+
+#main-content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px; /
+}
+
+
+#city-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#search-button {
+    padding: 10px;
+    background-color: #033264;
+    color: #fff;
+    border: 1px solid #007BFF;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    outline: none;
+    height: 40px;
+}
+
+
+#forecast {
+  background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Make the forecast section taller */
+    width: 100%; /* Make the forecast section wider */
+    flex-grow: 1; /* Allows the forecast section to grow and fill available space */
+    display: flex;
+    flex-direction: column;
+}
+
+#forecast h2 {
+    margin-top: 0;
+}
+
+
+.forecast-day {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+   
+}
+
+#forecast-container {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1; 
+    background-color: #033264;
+    padding: 10px;
+    gap: 10px;
+}
+
