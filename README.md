@@ -7,7 +7,7 @@ A dynamic weather dashboard that displays current and 5-day weather forecasts fo
 ![Home Page](./assets/images/homepage.png)
 
 ### City Weather
-![City Weather](./assets/images/citiweather.png)
+![City Weather](./assets/images/cityweather.png)
 
 ## Features
 - Search for a city to get current and future weather conditions.
