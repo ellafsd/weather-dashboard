@@ -1,13 +1,17 @@
 # weather-dashboard
 A dynamic weather dashboard that displays current and 5-day weather forecasts for multiple cities using the OpenWeatherMap API. Search for cities to view their weather conditions and store search history with localStorage for quick access.
 
+# Live at: 
+https://ellafsd.github.io/weather-dashboard/
+
+
 ## Screenshots
 
 ### Home Page
 ![Home Page](./assets/images/homepage.png)
 
 ### City Weather
-![City Weather](./assets/images/citiweather.png)
+![City Weather](./assets/images/cityweather.png)
 
 ## Features
 - Search for a city to get current and future weather conditions.
