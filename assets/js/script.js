@@ -88,10 +88,20 @@ function displayForecast(data) {
 
 function addToHistory(city) {
     const searchHistory = document.getElementById('search-history');
+    const historyItems = searchHistory.getElementsByTagName('li');
+
+    // Check if the city is already in the history
+    for (let i = 0; i < historyItems.length; i++) {
+        if (historyItems[i].textContent.toLowerCase() === city.toLowerCase()) {
+            return; // City already exists, so do not add it again
+        }
+    }
+
+    // Add the city to the history if it doesn't already exist
     const historyItem = document.createElement('li');
     historyItem.textContent = city;
     historyItem.addEventListener('click', function() {
-        clearWeatherData();
+        document.getElementById('city-input').value = city; // Set the city's name in the search bar
         getWeather(city);
     });
     searchHistory.appendChild(historyItem);
